@@ -11,7 +11,7 @@
     ./Project_list.txt
     Write the project name per line
     
-    /Input/FASTQ/<project_name>/<sample>.fastq
+    /Input/FASTQ/<project_name>/<sample_name>.fastq
     /Input/Reference/<project_name>/barcode.txt
     /Input/Reference/<project_name>/Reference_sequence.txt
     /Input/Reference/<project_name>/Target_region.txt
