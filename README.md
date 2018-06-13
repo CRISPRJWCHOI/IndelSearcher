@@ -10,7 +10,7 @@
 ### Usage ###
 
     ./Project_list.txt
-    Write the project name per line
+    Write the only one project name per line
     
     /Input/FASTQ/<project_name>/<sample_name>.fastq
     /Input/Reference/<project_name>/barcode.txt
