@@ -17,4 +17,4 @@
     /Input/Reference/<project_name>/Reference_sequence.txt
     /Input/Reference/<project_name>/Target_region.txt
     
-    python2.7 Run_indel_searcher_ver3.0.py Cas9 --pam_type Cas9 --pam_pos Forward
+    python2.7 Run_indel_searcher_ver3.0.py --pam_type Cas9 --pam_pos Forward
