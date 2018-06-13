@@ -1,2 +1,1 @@
-# KRAS_CRISPR_CAS9
 # IndelSearcher_CRISPR_CAS9
