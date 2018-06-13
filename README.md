@@ -19,3 +19,6 @@
     
     Test
     python2.7 Run_indel_searcher_ver3.0.py --pam_type Cas9 --pam_pos Forward
+    
+    Help
+    python2.7 Run_indel_searcher_ver3.0.py -h
