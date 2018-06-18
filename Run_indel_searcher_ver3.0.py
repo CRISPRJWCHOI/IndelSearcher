@@ -54,7 +54,7 @@ class Path_info(object):
 
 class Single_node_controller(Path_info):
 
-    def __init__(self, iCore, sProject, options):
+    def __init__(self, sProject, options):
         super(Single_node_controller, self).__init__(sProject, options)
 
     def Split_file(self):
@@ -147,7 +147,7 @@ def Main():
     with open('Project_list.txt') as Project_list:
         for sRow in Project_list:
             sProject   = sRow.replace('\n', '').replace('\r','').replace(' ','')
-            Ins_single = Single_node_controller(options.multicore, sProject, options)
+            Ins_single = Single_node_controller(sProject, options)
             Ins_single.Split_file()
             Ins_single.Make_reference()
 
