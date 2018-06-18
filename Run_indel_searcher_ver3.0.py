@@ -128,7 +128,7 @@ def Main():
 	
     print 'program start: %s' % datetime.now()
    	
-    parser = OptionParser("Indel search program for CRISPR CAS9\n<All default option> python2.7 Run_indel_searcher_ver3.0.py Cas9 --pam_type Cas9 --pam_pos Forward")
+    parser = OptionParser("Indel search program for CRISPR CAS9\n<All default option> python2.7 Run_indel_searcher_ver3.0.py --pam_type Cas9 --pam_pos Forward")
 
     parser.add_option("-t", "--thread", default="1", type="int", dest="multicore", help="multiprocessing number")
     parser.add_option("-c", "--chunk_number", default="400000", type="int", dest="chunk_number", help="split FASTQ, must be multiples of 4. file size < 1G recommendation:40000, size > 1G recommendation:400000")
