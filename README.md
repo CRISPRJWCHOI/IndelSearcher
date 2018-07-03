@@ -24,6 +24,10 @@
     Detailed options
     python2.7 Run_indel_searcher_ver3.0.py -h
     
+    Output
+    /Output/<project_name>/Summary_result/Final_indel_result_<project_name>.tsv
+    /Output/<project_name>/Summary_result/Summary_result.tsv
+    
     
 # Random sequence generator
 
