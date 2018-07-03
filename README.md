@@ -30,12 +30,12 @@
     
     Output
     /Output/<project_name>/Summary_result/Final_indel_result_<project_name>.tsv
-    Barcode Total_indel     Total   IND/TOT Match   Info
+    Barcode            Total_indel  Total IND/TOT  Match    Info
     CACCGACACACACACAGCAC    20      105     0.19    20.0    66M1I:12:60.0, 67M2D:8:40.0
     
     /Output/<project_name>/Summary_result/Summary_result.tsv
-    Barcode Total   Insertion       Deletion        Complex Total_indel     IND/TOT
-    CACCGACACACACACAGCAC    105     12      8       0       20      0.190476190476
+    Barcode                Total  Insertion Deletion Complex Total_indel IND/TOT
+    CACCGACACACACACAGCAC    105      12        8        0        20      0.190476190476
     
 # Random sequence generator
 
