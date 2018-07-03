@@ -2,6 +2,7 @@
 
 ### Prerequisite ###
     OS Requirements: Linux(Ubuntu 16.04)
+    Install time: about 30 minutes
     
     python2.7
     pip install numpy==1.12.1 pandas==0.20.1
