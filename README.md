@@ -1,7 +1,11 @@
 # IndelSearcher_CRISPR_CAS9
 
 ### Prerequisite ###
+    OS Requirements: Linux(Ubuntu 16.04)
+    
     python2.7
+    pip install numpy==1.12.1 pandas==0.20.1
+    anaconda python2.7
     conda install numpy=1.12.1 pandas=0.20.1
     
     EMBOSS:6.6.0.0, needle
@@ -27,7 +31,6 @@
     Output
     /Output/<project_name>/Summary_result/Final_indel_result_<project_name>.tsv
     /Output/<project_name>/Summary_result/Summary_result.tsv
-    
     
 # Random sequence generator
 
