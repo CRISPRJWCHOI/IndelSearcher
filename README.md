@@ -36,9 +36,9 @@
 
 ### Prerequisite ### 
     python2.7
-    pip install numpy==1.12.1
+    pip install numpy==1.13
     anaconda python2.7
-    conda install numpy=1.12.1
+    conda install numpy=1.13
     
 ### Usage ###
     python2.7 Random_sequence_generator.py 1000 23 0.2 0.2 0.2 0.3 random_seq.txt
