@@ -1,6 +1,7 @@
 # IndelSearcher_CRISPR_CAS9
 
 ### Prerequisite ###
+    python2.7
     conda install numpy=1.12.1 pandas=0.20.1
     
     EMBOSS:6.6.0.0, needle
@@ -23,4 +24,11 @@
     Detailed options
     python2.7 Run_indel_searcher_ver3.0.py -h
     
+    
 # Random sequence generator
+
+### Prerequisite ###
+    python2.7
+    
+### Usage ###
+    python2.7 Random_sequence_generator.py 1000 23 0.2 0.2 0.2 0.3 random_seq.txt
