@@ -22,3 +22,5 @@
     
     Detailed options
     python2.7 Run_indel_searcher_ver3.0.py -h
+    
+# Random sequence generator
