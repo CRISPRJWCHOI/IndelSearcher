@@ -41,4 +41,4 @@
     conda install numpy=1.13
     
 ### Usage ###
-    python2.7 Random_sequence_generator.py 1000 23 0.2 0.2 0.2 0.3 random_seq.txt
+    python2.7 Random_sequence_generator.py 1000 23 0.2 0.3 0.2 0.3 random_seq.txt
