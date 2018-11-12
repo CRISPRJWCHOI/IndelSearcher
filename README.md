@@ -4,9 +4,10 @@
     OS Requirements: Linux(Ubuntu 16.04)
     Install time: about 30 minutes
     
-    python2.7
+    - python2.7
     pip install numpy==1.12.1 pandas==0.20.1
-    anaconda python2.7
+    or
+    - anaconda python2.7
     conda install numpy=1.12.1 pandas=0.20.1
     
     EMBOSS:6.6.0.0, needle
@@ -41,9 +42,10 @@
 # Random sequence generator
 
 ### Prerequisite ### 
-    python2.7
+    - python2.7
     pip install numpy==1.13
-    anaconda python2.7
+    or
+    - anaconda python2.7
     conda install numpy=1.13
     
 ### Usage ###
