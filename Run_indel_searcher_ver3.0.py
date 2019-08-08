@@ -48,6 +48,7 @@ class Path_info(object):
         if not os.path.isdir(self.sOutput_dir+'/result/freq/freq_result'): os.mkdir(self.sOutput_dir+'/result/freq/freq_result')
 
         self.sInput_path = os.path.dirname(self.sInput_file)
+	if not os.path.isdir('%s/Split_files' % self.sInput_path): os.mkdir('%s/Split_files' % self.sInput_path)
         self.sPair       = 'False'  # FASTQ pair: True, False
         self.sDir        = '/'.join(self.sInput_list.split('/')[:-1])
 
@@ -69,7 +70,7 @@ class Single_node_controller(Path_info):
             open(self.sInput_list, 'w') as Out_list:
 
             for num in range(1, iSplit_num + 1):
-                sSplit_file = '%s/%s_%s.fq' % (self.sInput_path, os.path.basename(self.sInput_file), num)
+                sSplit_file = '%s/Split_files/%s_%s.fq' % (self.sInput_path, os.path.basename(self.sInput_file), num)
                 #if not os.path.isfile(sSplit_file):
                 with open(sSplit_file, 'w') as out:
                     Out_list.write(os.path.basename(sSplit_file) + '\n')
@@ -101,9 +102,9 @@ class Single_node_controller(Path_info):
 
             for sFile in Input:
                 lFile = sFile.replace('\n', '').split(' ')
-                sForward = self.sDir + '/' + lFile[0]
+                sForward = self.sDir + '/Split_files/' + lFile[0]
                 if self.sPair == 'True':
-                    sReverse = self.sDir + '/' + lFile[1]
+                    sReverse = self.sDir + '/Split_files/' + lFile[1]
 
                 lCmd.append('./Indel_searcher_ver3.0.py {forw} {reve} {ref} {pair} {GapO} {GapE} {EndO} {EndE} {Insertion_win} {Deletion_win} {PAM_type} {PAM_pos} {Qual} {outdir}'.format(forw=sForward, reve=sReverse,
                             ref=self.sRef_path, pair=self.sPair, GapO=self.sGap_open, GapE=self.sGap_extend, EndO=self.sEnd_open, EndE=self.sEnd_extend, Insertion_win=self.iInsertion_win, Deletion_win=self.iDeletion_win,
