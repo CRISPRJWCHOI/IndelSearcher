@@ -60,7 +60,7 @@ class Single_node_controller(Path_info):
     def Split_file(self):
 
         iTotal_lines = len(open(self.sInput_file).readlines())
-        iSplit_num   = iTotal_lines/self.iChunk_size
+        iSplit_num   = iTotal_lines/self.iChunk_size +1
         if iSplit_num == 0: iSplit_num = 1
 
         print(iTotal_lines, self.iChunk_size, iSplit_num)
