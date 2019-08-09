@@ -31,9 +31,8 @@ class Path_info(object):
         self.sTarget_seq = './Input/Reference/%s/Target_region.txt' % self.sProject
         self.sRef_path = './Input/Reference/%s/Reference.fa' % self.sProject  # reference e.g.Consensus.fa
 
-        for sFile in os.listdir('./Input/FASTQ/%s' % (self.sProject)):
-            self.sFastq_name = '.'.join(sFile.split('.')[:-1])
-            print(self.sFastq_name)
+        self.sFastq_name = '.'.join([sFile for sFile in os.listdir('./Input/FASTQ/%s' % (self.sProject)) if '.fastq' in sFile][0].split('.')[:-1])
+        print(self.sFastq_name)
         self.sInput_file = './Input/FASTQ/%s/%s.fastq' % (self.sProject, self.sFastq_name)
         self.sInput_list = './Input/FASTQ/%s/%s.txt' % (self.sProject, self.sFastq_name)  # splited input file names for fastq processing
 
