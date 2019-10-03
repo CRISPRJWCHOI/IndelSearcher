@@ -1,5 +1,8 @@
 # IndelSearcher_CRISPR_CAS9
 
+### This version is not maintained now, move to https://github.com/CRISPRJWCHOI/CRISPR_toolkit ###
+
+
 ### Prerequisite ###
     OS Requirements: Linux(Ubuntu 16.04)
     Install time: about 30 minutes
